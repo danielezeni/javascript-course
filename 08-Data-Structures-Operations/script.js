@@ -48,7 +48,44 @@ const restaurant = {
   },
 };
 
-////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+// Sets
+/*
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(ordersSet);
+
+console.log(new Set('Daniele'));
+
+console.log(ordersSet.size);
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+ordersSet.delete('Risotto');
+console.log(ordersSet);
+
+for (const order of ordersSet) console.log(order);
+
+// Example
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(
+  new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+);
+
+console.log(new Set('danielezeni').size);
+*/
+
+///////////////////////////////////////////////////////////////////////
 // Coding Challenge #2
 
 /* 
@@ -71,7 +108,7 @@ BONUS: Create an object called 'scorers' which contains the names of the players
 */
 
 // Answers:
-
+/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -139,10 +176,12 @@ const scorers = {};
 for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
+*/
 
-//////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 // Looping Objects: Object Keys, Values, and Entries
 
+/*
 // Property NAMES
 const properties = Object.keys(openingHours);
 console.log(properties);
@@ -165,8 +204,8 @@ const entries = Object.entries(openingHours);
 for (const [day, { open, close }] of entries) {
   console.log(`On ${day} we open at ${open} and close at ${close}`);
 }
-
-/////////////////////////////////////////////////////////////////////
+*/
+///////////////////////////////////////////////////////////////////////
 // Optional Chaining
 
 /*
@@ -209,7 +248,7 @@ for (const item of menu.entries()) {
 // console.log([...menu.entries()]);
 */
 
-///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 // Coding Challenge #1
 
 /* 
@@ -266,8 +305,9 @@ team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
 */
 
-///////////////////////////////////////////////////////////////
-// Loguical Assignment Operators
+///////////////////////////////////////////////////////////////////////
+// Logical Assignment Operators
+
 /*
 const rest1 = {
   name: 'Capri',
@@ -303,6 +343,7 @@ console.log(rest2);
 
 ///////////////////////////////////////////////////////////////////////
 // The Nullish Coalescing Operator
+
 /*
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests || 10;
@@ -347,7 +388,7 @@ if (restaurant.orderPizza) {
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 */
 
-/////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 // Rest Pattern and Parameters
 
 /*
@@ -389,7 +430,7 @@ restaurant.orderPizza('mushrooms', 'onions', 'olives', 'spinach');
 restaurant.orderPizza('mushrooms');
 */
 
-//////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 // The Spread Operator (...)
 
 /*
